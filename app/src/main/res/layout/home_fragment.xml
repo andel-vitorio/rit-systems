@@ -55,8 +55,8 @@
                     android:adjustViewBounds="true"
                     android:cropToPadding="true"
                     android:scaleType="centerInside"
-                    android:src="@tools:sample/avatars"
-                    tools:srcCompat="@drawable/logo" />
+                    android:src="@drawable/logo"
+                     />
 
                 <TextView
                     android:id="@+id/description_textview"
