@@ -2,6 +2,7 @@ package com.example.ritsystems;
 
 import android.os.Bundle;
 
+import com.google.android.material.navigation.NavigationBarView;
 import com.google.android.material.snackbar.Snackbar;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -37,6 +38,24 @@ public class MainActivity extends AppCompatActivity {
         appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
       //  NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
 
+        NavigationBarView navigationBarView = findViewById(R.id.bottom_navigation);
+        navigationBarView.setOnItemSelectedListener(item -> {
+            int id = item.getItemId();
+            if (id == R.id.home_menu_item) {
+                Snackbar.make(navigationBarView, "Home selecionado!", Snackbar.LENGTH_SHORT).show();
+                return true;
+            }
+            else if ( id == R.id.teacher_menu_item) {
+                Snackbar.make(navigationBarView, "Professor selecionado!", Snackbar.LENGTH_SHORT).show();
+                return  true;
+            }
+
+            else if (id == R.id.activities_menu_item) {
+                Snackbar.make(navigationBarView, "Atividades selecionado!", Snackbar.LENGTH_SHORT).show();
+                return true;
+            }
+            else return false;
+        });
     }
 
     @Override
