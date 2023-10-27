@@ -10,4 +10,6 @@
     <string name="home_label"> Início </string>
     <string name="teachers_label"> Professores </string>
     <string name="activities_label"> Atividades </string>
+
+    <string name="item_text">Item</string>
 </resources>

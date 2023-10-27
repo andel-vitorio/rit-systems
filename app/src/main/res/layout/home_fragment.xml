@@ -87,13 +87,13 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                app:cardCornerRadius="24dp" >
+                app:cardCornerRadius="24dp">
 
                 <LinearLayout
                     style="@style/Widget.Material3.BottomNavigationView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="#211F26"
+                    android:background="#2A2831"
                     android:orientation="vertical"
                     android:paddingLeft="24dp"
                     android:paddingTop="32dp"
@@ -430,6 +430,28 @@
                     </LinearLayout>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Menu" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/menuRv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:paddingTop="16dp"
+                tools:itemCount="4"
+                tools:listitem="@layout/menu_item" />
 
         </LinearLayout>
 
